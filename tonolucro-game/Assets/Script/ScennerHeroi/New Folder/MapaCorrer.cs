@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class MapaCorrer : MonoBehaviour
 {
- 
+
+  
     private Rigidbody2D corporigido;
-    float velocidade = 5;
+    float velocidade = 4;
     // Start is called before the first frame update
     void Start()
     {

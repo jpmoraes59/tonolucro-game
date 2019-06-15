@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 5929645168749396394}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 0.72}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.72}
   m_Children: []
   m_Father: {fileID: 5929645169004837762}
   m_RootOrder: 0
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 734171002844181941}
   m_Layer: 0
   m_Name: AviaoObstaculo
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -172,8 +172,8 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: 0, y: 1}
-      - {x: -1.7802925, y: 0.34560087}
-      - {x: -0.5877852, y: -0.80901706}
+      - {x: -0.9146081, y: 0.45851618}
+      - {x: -0.493689, y: -0.52672863}
       - {x: -0.020590603, y: -1.2480242}
-      - {x: 1.5877466, y: 0.39825344}
+      - {x: 0.72206235, y: -0.09104678}
       - {x: 1.0730027, y: 0.626078}
