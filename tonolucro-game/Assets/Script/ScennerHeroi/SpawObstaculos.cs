@@ -18,17 +18,18 @@ public class SpawObstaculos : MonoBehaviour
 
     IEnumerator Spawn()
     {
+        float time = Random.Range(timeMax, timeMin);
         while (true)
         {
-            float time = Random.Range(timeMax, timeMin);
-            yield return new WaitForSeconds(1f);
+       
+                yield return new WaitForSeconds(1f);
 
-            int indice = Random.Range(0, spawPoints.Length);
-            Transform spawponit = spawPoints[indice].transform;
-            GameObject spawpointTemp = Instantiate(obstaculos, spawponit.position, spawponit.rotation);
-            Destroy(spawpointTemp, 5f);
-
-
+                int indice = Random.Range(0, spawPoints.Length);
+                Transform spawponit = spawPoints[indice].transform;
+                GameObject spawpointTemp = Instantiate(obstaculos, spawponit.position, spawponit.rotation);
+                Destroy(spawpointTemp, 5f);
+               time = Random.Range(timeMax, timeMin);
+            
         }
     }
 }

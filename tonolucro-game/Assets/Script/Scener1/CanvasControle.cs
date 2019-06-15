@@ -8,8 +8,8 @@ public class CanvasControle : MonoBehaviour
 
     public Sprite[] imagens;
    public Image[] elementoPosition;
-    public float intervaloMax = 2;
-    public float intervaloMin = 0.5f;
+    public float intervaloMax = 5;
+    public float intervaloMin = 2f;
     float timeSorteio;
 
     // Start is called before the first frame update

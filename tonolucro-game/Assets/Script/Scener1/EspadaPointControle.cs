@@ -10,6 +10,7 @@ public class EspadaPointControle : MonoBehaviour
     CircleCollider2D colider;
     Camera cam;
     public GameObject canvasListaSlot;
+    public Image barraPrgresso;
 
     public Text placar;
     private int cont;
@@ -96,8 +97,8 @@ public class EspadaPointControle : MonoBehaviour
             {
                 if (lista[i].GetComponent<Image>().sprite.name.Equals(collision.GetComponent<SpriteRenderer>().sprite.name))
                     alimentacaoCerta = true;
-                    placar.GetComponent<Text>().text =(cont += 1)+"";
-                    Debug.Log("ISSSOOO AIIII MALLUCCOOOOOO");
+                    placar.GetComponent<Text>().text =(cont += 1) +"";
+                barraPrgresso.fillAmount += ((2f)/100);
                     return;
                 }
             }

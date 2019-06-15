@@ -10,6 +10,7 @@ TagManager:
   - mapabaixo
   - paralaxtopo
   - paralaxinferior
+  - Obstaculo
   layers:
   - Default
   - TransparentFX
