@@ -10,7 +10,7 @@ public class HeroiControll : MonoBehaviour
     float velocidade = 1f;
     public Text textPlacar;
     int temp;
-    public GameObject menuINGame;
+   public GameObject menuINGame;
 
    
    
@@ -26,14 +26,14 @@ public class HeroiControll : MonoBehaviour
     {
         corpoRigido.velocity = new Vector2((velocidade * 2)*-1, corpoRigido.velocity.y);
     }
-   // private void OnTriggerEnter2D(Collider2D collision)
-  // {
-      //  if (collision.tag.Equals("Obstaculo"))
-     //   {
-        
-        //   Time.timeScale = 0;
-     //  }
-  // }
+    private void OnTriggerEnter2D(Collider2D collision)
+   {
+        if (collision.tag.Equals("Obstaculo"))
+        {
+            menuINGame.active = true;
+           Time.timeScale = 0;
+       }
+   }
 
  
     }
