@@ -1,0 +1,169 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5092136986032654810
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3057837775863011950}
+  - component: {fileID: 1914692397314868230}
+  - component: {fileID: 1472773310228091242}
+  - component: {fileID: 2845395177137940938}
+  - component: {fileID: 3266112156729707450}
+  m_Layer: 8
+  m_Name: bola
+  m_TagString: alimentos
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3057837775863011950
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5092136986032654810}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.03}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1914692397314868230
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5092136986032654810}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 93a73c6dc07ae794e88a679b9cc67cbd, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 35.00738, y: 35.44}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!58 &1472773310228091242
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5092136986032654810}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.06524642, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.0789032
+--- !u!114 &2845395177137940938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5092136986032654810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4dc1d0666aaa64c86fdbb91912169f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imagens:
+  - {fileID: 21300000, guid: d1b20f2a5b3f4194d9aef65b111a9a76, type: 3}
+  - {fileID: 21300000, guid: 1f00f9fb52c8fdf4cbdf895f87b06e6f, type: 3}
+  - {fileID: 21300000, guid: 93a73c6dc07ae794e88a679b9cc67cbd, type: 3}
+  - {fileID: 21300000, guid: 361e7ebf3db99014fad96190051b62c1, type: 3}
+  - {fileID: 21300000, guid: da11ea76f5d827744ad5a81e857804b3, type: 3}
+  - {fileID: 21300000, guid: 4ecf1e554a6dc264c9ad3bf3d0eeec13, type: 3}
+  - {fileID: 21300000, guid: 35a909fef7a6cbd4a822be83d6adea74, type: 3}
+  - {fileID: 21300000, guid: 437e85a71fbfb1148b809e8378d431af, type: 3}
+  - {fileID: 21300000, guid: c388bd4ecb9c7fb41872a3e95072ac25, type: 3}
+  - {fileID: 21300000, guid: a805513e0df99cb47af91941ba852e57, type: 3}
+  subImagem:
+  - {fileID: 21300000, guid: 31bc1c00f6175b848ae9c1aa8a6509fa, type: 3}
+  - {fileID: 21300000, guid: 3432e57e843000c44900d2f8d5cfd438, type: 3}
+  - {fileID: 21300000, guid: ad40bd1350f2a6c4fbcc3e9af0b95311, type: 3}
+  - {fileID: 21300000, guid: db7636cd377d3624d8a380eb3defdf6f, type: 3}
+  - {fileID: 21300000, guid: 94f203a965ec5fc4289760c8d4118e91, type: 3}
+  - {fileID: 21300000, guid: 2be3ecdb874ed594594745099fab069e, type: 3}
+  - {fileID: 21300000, guid: da276b815a744b446bcc8ac9434aacaf, type: 3}
+  - {fileID: 21300000, guid: 48c9b5b42a66d064b8789f164383e553, type: 3}
+  - {fileID: 21300000, guid: 0595c1631c1d9fc45b3e3174e0a811c3, type: 3}
+  - {fileID: 21300000, guid: 7edaf622641ec5547a7933f41983226e, type: 3}
+  - {fileID: 21300000, guid: 1bb710616bea1614a88e486f7bebbbaf, type: 3}
+  - {fileID: 21300000, guid: a79439ad9741ddc4e9fcc0fc6d125d37, type: 3}
+  - {fileID: 21300000, guid: 7127140f8f52112429d4e72dd06cb49b, type: 3}
+  - {fileID: 21300000, guid: d7e68b4c09ab6854f91206512884e62e, type: 3}
+  - {fileID: 21300000, guid: 0ec985c131da06640ad3cc968211bdaa, type: 3}
+  - {fileID: 21300000, guid: 1972b5af2ca00074f995fab6b5ad9be9, type: 3}
+  - {fileID: 21300000, guid: 973da82c19c465d4d9fcab725142b65c, type: 3}
+  - {fileID: 21300000, guid: af303d9b9fb32d744aa0b7fa04c11292, type: 3}
+  - {fileID: 21300000, guid: 42a588287e1f5c440a9cc55aef1fcc5f, type: 3}
+  - {fileID: 21300000, guid: b589b4542bdf4ba40a5278b2763be3a5, type: 3}
+  subModel: {fileID: 4175564664460443740, guid: 678a6d7865df35b4394f6f02a57d2036,
+    type: 3}
+  forcaMAx: 1.4
+  forcaMin: 0.8
+--- !u!50 &3266112156729707450
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5092136986032654810}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0871
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4

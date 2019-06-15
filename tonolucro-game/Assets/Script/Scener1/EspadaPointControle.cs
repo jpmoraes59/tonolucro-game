@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EspadaPointControle : MonoBehaviour
 {
@@ -8,7 +9,12 @@ public class EspadaPointControle : MonoBehaviour
     Rigidbody2D corpoRigido;
     CircleCollider2D colider;
     Camera cam;
+    public GameObject canvasListaSlot;
 
+    public Text placar;
+    private int cont;
+    public bool alimentacaoCerta;
+  
 
     public GameObject lamina;
     private GameObject line;
@@ -22,6 +28,7 @@ public class EspadaPointControle : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        alimentacaoCerta = false;
         cam = Camera.main;
         corpoRigido = GetComponent<Rigidbody2D>();
         colider = GetComponent<CircleCollider2D>();
@@ -30,7 +37,7 @@ public class EspadaPointControle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+       alimentacaoCerta = false;
         if (Input.GetMouseButtonDown(0))
         {
             inciarCorte();
@@ -79,4 +86,21 @@ public class EspadaPointControle : MonoBehaviour
         colider.enabled = false;
 
     }
-}
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+       
+        if (collision.tag.Equals("alimentos")){
+          Image[] lista = canvasListaSlot.GetComponent<CanvasControle>().elementoPosition;
+            Debug.Log(collision.GetComponent<SpriteRenderer>().sprite.name);
+            for (int i=0;i < 4;i++)
+            {
+                if (lista[i].GetComponent<Image>().sprite.name.Equals(collision.GetComponent<SpriteRenderer>().sprite.name))
+                    alimentacaoCerta = true;
+                    placar.GetComponent<Text>().text =(cont += 1)+"";
+                    Debug.Log("ISSSOOO AIIII MALLUCCOOOOOO");
+                    return;
+                }
+            }
+        }
+    }
+
