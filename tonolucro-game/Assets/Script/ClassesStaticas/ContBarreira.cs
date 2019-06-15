@@ -8,16 +8,15 @@ public class ContBarreira : MonoBehaviour
     public Text contPuntucaçao;
     private int cont;
     public Image barraProgresso;
-    public Image finalGame;
+   // public Image finalGame;
     float taime = 0.2f;
     float temp;
-    // Start is called before the first frame update
+ 
     void Start()
     {
         temp = taime;
     }
 
-    // Update is called once per frame
     void Update()
     {
        

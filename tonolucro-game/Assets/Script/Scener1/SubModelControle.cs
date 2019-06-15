@@ -7,7 +7,7 @@ public class SubModelControle : MonoBehaviour
     Rigidbody2D corpoRigido;
     public float forcaMAx = 0.5f;
     public float forcaMin = 0.2f;
-    // Start is called before the first frame update
+ 
     void Start()
     {
         corpoRigido = GetComponent<Rigidbody2D>();
@@ -18,7 +18,7 @@ public class SubModelControle : MonoBehaviour
         Destroy(gameObject, 3f);
     }
 
-    // Update is called once per frame
+  
     void Update()
     {
         

@@ -8,7 +8,7 @@ public class FadeCorrer : MonoBehaviour
     public Image barraProgresso;
     private float prograsso;
     Rigidbody2D rigidbody2D;
-    public float velocidade = 2;
+    public float velocidade = 3;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +20,7 @@ public class FadeCorrer : MonoBehaviour
     {
         prograsso = barraProgresso.GetComponent<Image>().fillAmount;
         Debug.Log(prograsso);
-        if (prograsso >= 0.1)
+        if (prograsso >= 0.90)
         {
             rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, velocidade * 1);
         }

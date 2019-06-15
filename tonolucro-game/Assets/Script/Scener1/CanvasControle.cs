@@ -30,6 +30,6 @@ public class CanvasControle : MonoBehaviour
         }
            timeSorteio = Random.RandomRange(intervaloMax, intervaloMin);
 
-        }
-    }
+      }
+   }
 }
