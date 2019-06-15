@@ -9,9 +9,10 @@ public class EspadaPointControle : MonoBehaviour
     CircleCollider2D colider;
     Camera cam;
 
-    Touch toque;
+
     public GameObject lamina;
     private GameObject line;
+
     public bool isCorte;
     public Vector2 ultimaPosicao;
     public float velocidadeMinimaCorte = 0.001f;
@@ -65,12 +66,15 @@ public class EspadaPointControle : MonoBehaviour
     void inciarCorte()
     {
         isCorte = true;
+        line = Instantiate(lamina,transform);
         colider.enabled = true;
         ultimaPosicao = cam.ScreenToViewportPoint(Input.mousePosition);
     }
 
     void pararCorte()
     {
+        line.transform.SetParent(null);
+        Destroy(line, 2f);
         isCorte = false;
         colider.enabled = false;
 
